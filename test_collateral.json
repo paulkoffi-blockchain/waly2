@@ -1,0 +1,7 @@
+{
+  "userAddress": "0x3456789012345678901234567890123456789012",
+  "transactionType": "deposit",
+  "amountPol": 2,
+  "balanceBefore": 3,
+  "balanceAfter": 5
+}

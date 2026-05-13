@@ -1,0 +1,12 @@
+{
+  "buyerAddress": "0x2345678901234567890123456789012345678901",
+  "sellerAddress": "0x1234567890123456789012345678901234567890",
+  "productId": 1,
+  "itemPriceFcfa": 500000,
+  "itemPricePol": 100,
+  "totalAmountPol": 100,
+  "status": "created",
+  "deliveryAddress": "Dakar, Almadies, Avenue 456",
+  "deliveryPhone": "+221777654321",
+  "buyerName": "Acheteur Test"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "waly-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "contracts"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev -w @waly/web",
+    "dev:api": "npm run start:dev -w @waly/api",
+    "build": "npm run build -w @waly/web && npm run build -w @waly/api",
+    "start": "npm run start -w @waly/web",
+    "test": "npm run test -w @waly/api",
+    "lint": "npm run lint -w @waly/web && npm run lint -w @waly/api",
+    "dev:safe": "start-dev.bat",
+    "dev:clean": "taskkill /F /IM node.exe && npm run dev:safe",
+    "setup": "npm install && cp .env.example .env.local",
+    "fix:server": "bash diagnose-and-fix.sh",
+    "restart:all": "taskkill /F /IM node.exe > nul 2>&1 && timeout /t 2 /nobreak > nul && npm run dev",
+    "check:ports": "netstat -ano | findstr :3000 && netstat -ano | findstr :3001",
+    "kill:node": "taskkill /F /IM node.exe"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
