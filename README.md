@@ -387,4 +387,4 @@ MIT License - voir [LICENSE](LICENSE) pour plus d'informations.
 
 ---
 
-**© 2024 WALY Platform - Livraison Web3 sécurisée pour l'Afrique**
+**© 2026 WALY Platform - Livraison Web3 sécurisée pour l'Afrique**
